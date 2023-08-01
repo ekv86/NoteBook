@@ -188,6 +188,7 @@ function onTableClick(e) {
     if (e.target.closest('.delete-all-js')) {
         formArr.length = 0;
         tableBodyEl.innerHTML = createMarkupNote(formArr);
+        statisticBodyEl.innerHTML = statisticsMarkupActiveNote(totalCategories());
         updateStatistic();
     }
 }
